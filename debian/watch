@@ -1,0 +1,3 @@
+version=3
+https://launchpad.net/light-locker-settings \
+(?:.*/|)light-locker-settings(?:-|_|_v|\.|V|)(\d\S*)\.(?:tar\.(?:gz|bz2|xz)|tgz|tbz2|txz|zip)

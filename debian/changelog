@@ -1,0 +1,70 @@
+light-locker-settings (1.5.0-0ubuntu1) vivid; urgency=medium
+
+  * New development release to support light-locker 1.5.1
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Mon, 19 Jan 2015 22:00:37 -0500
+
+light-locker-settings (1.4.2-0ubuntu1) utopic; urgency=medium
+
+  * New bugfix release.
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Thu, 25 Sep 2014 17:54:22 -0400
+
+light-locker-settings (1.4.1-0ubuntu1) utopic; urgency=medium
+
+  * New bugfix release.
+    - Fixes localization support (LP: #1326864)
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Sun, 21 Sep 2014 18:32:12 -0400
+
+light-locker-settings (1.4.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release.
+  * Drop 01_xfpm_to_not_control_lock_on_suspend, fixed in release.
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Sun, 17 Aug 2014 06:47:09 -0400
+
+light-locker-settings (1.2.1-0ubuntu2) utopic; urgency=medium
+
+  * Add 01_xfpm_to_not_control_lock_on_suspend (Fixes LP: #1303736, Closes LP: #1323368)
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Tue, 27 May 2014 00:08:01 -0400
+
+light-locker-settings (1.2.1-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release. (LP: #1302484)
+    - Fixes XFCE Power Manager setttings sync (LP: #1290737)
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Fri, 04 Apr 2014 06:46:52 -0400
+
+light-locker-settings (1.2.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release. (LP: #1297058)
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Mon, 24 Mar 2014 22:31:55 -0400
+
+light-locker-settings (1.0.1-0ubuntu2) trusty; urgency=medium
+
+  * debian/control
+    - Add python-psutil to Depends, it is now required in 1.0.1 (LP: #1291699)
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Wed, 12 Mar 2014 20:52:23 -0400
+
+light-locker-settings (1.0.1-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release. (LP: #1291324)
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Wed, 12 Mar 2014 07:23:04 -0400
+
+light-locker-settings (1.0.0-0ubuntu1) trusty; urgency=medium
+
+  [ Sean Davis ]
+  * Initial release (LP: #1281536)
+
+  [ Iain Lane ]
+  * Don't install INSTALL and COPYING.gz since these aren't useful for Debian
+    packages - installation is handled by the package and license info is
+    documented in the 'copyright' file.
+  * Set Maintainer to Ubuntu Developers and Original Maintainer to Sean Davis.
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Wed, 19 Feb 2014 15:13:49 +0000

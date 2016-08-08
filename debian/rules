@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+DESTDIR := ${CURDIR}/debian/light-locker-settings
+
+%:
+	dh $@ --with python2
+
+override_dh_auto_configure:
+	./configure --prefix=/usr
+
+override_dh_auto_install:
+	dh_auto_install
+	find $(DESTDIR)/usr/share -type f -exec chmod a-x '{}' ';'
+	rm $(DESTDIR)/usr/share/doc/light-locker-settings/COPYING \
+		$(DESTDIR)/usr/share/doc/light-locker-settings/INSTALL
