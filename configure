@@ -35,9 +35,10 @@ while [ $# -gt 0 ]; do
             exit 1
             ;;
     esac
-    shift
-done
-
+    shift 
+done 
+echo "Setting Prefix..." 
+sed -e s,@prefix@,$PREFIX, $APPNAME.desktop.in.in > $APPNAME.desktop.in
 echo "Creating Makefile..."
 sed -e s,@prefix@,$PREFIX, Makefile.in.in > Makefile.in
 sed -e s,@python@,$PYTHON, Makefile.in > Makefile
